@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"curse_choice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"curse_choice",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
