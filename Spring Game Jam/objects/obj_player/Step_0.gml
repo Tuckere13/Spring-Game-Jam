@@ -46,15 +46,6 @@ if (point_direction(x, y, mouse_x, mouse_y) <= 315 and point_direction(x, y, mou
 	image_xscale = 1;
 }
 
-
-
-
-
-
-
-
-
-
 keyRight = keyboard_check(vk_right) or keyboard_check(ord("D"));
 keyLeft = keyboard_check(vk_left) or keyboard_check(ord("A"));
 keyJump = keyboard_check_pressed(vk_space);

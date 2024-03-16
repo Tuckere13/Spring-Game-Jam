@@ -66,12 +66,12 @@ function collision() {
 	
 	// move as far as we can before hitting wall
 	repeat(_disx){
-		if (!place_meeting(x + sign(_tx - x), y, obj_invis_wall)) {
+		if (!place_meeting(x + sign(_tx - x), y, obj_wall)) {
 			x += sign(_tx - x);
 		}
 	}
 	repeat(_disy){
-		if (!place_meeting(x, y + sign(_ty - y), obj_invis_wall)) {
+		if (!place_meeting(x, y + sign(_ty - y), obj_wall)) {
 			y += sign(_ty - y);
 		}
 	}

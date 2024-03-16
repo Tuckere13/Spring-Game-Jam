@@ -1,4 +1,8 @@
 hp = 100  // might need to remove this sowwwwy
+prevhp = int64(hp);
+prevbuff = int64(speed_buff);
+
+webHit = false;
 
 starting_x = x;
 starting_y = y;
@@ -140,15 +144,17 @@ function StateFree()
 		dashSp = dashDistance/dashTime;
 		dashEnergy = dashDistance;
 		
+		prevhp = int64(hp);
+		
 		state = StateDash();
 	}
 }
 
 function StateDash()
 {
-
+	
 	isDashing = true; 
-
+	
 	//Move Via the dash
 	hsp = lengthdir_x(dashSp, dashDirection);
 	vsp = lengthdir_y(dashSp,dashDirection);
@@ -187,12 +193,15 @@ function StateDash()
 	}
 	y += vsp;
 	
+	hp = prevhp;
+	
 	//Ending the dash
 	dashEnergy -= dashSp;
 	if (dashEnergy <= 0)
 	{
 		vsp = 0;
 		hsp = 0;
+		hp = prevhp;
 		state = StateFree();
 	}
 }
@@ -238,7 +247,9 @@ function StateRanged()
 	
 	// set to StateFree after all info run.
 	state = StateFree();
+	
 }
 
 // reset to StateFree by default.
 state = StateFree();
+

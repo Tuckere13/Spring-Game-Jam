@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (global.midas){
-	hp += 5
+	hp += 15
 } else{
-hp += 10
+hp += 30
 }
 instance_destroy(other)
