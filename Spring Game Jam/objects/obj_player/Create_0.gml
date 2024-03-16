@@ -33,6 +33,34 @@ for(all curses)
 }
 */
 
+//////////////////////////////////////////////////////
+// EVAN - March 16 2024 - 7 PM push
+
+// Initialize playerInfo
+function configStats()
+{
+	// resets each time so same curses aren't added on multiple times when they aren't
+	// supposed to.
+	global.playerInfo =  playerInfoStruct(100, 5, 5, 2);
+	
+	for(var _i = 0; _i < array_length(global.curseInfo); _i++)
+	{
+		if(global.curseInfo[_i].isActive = true)
+		{
+			var _tempCurseData = global.curseInfo[_i].playerInfoStruct();
+			global.playerInfo.hp += _tempCurseData.hp;
+			global.playerInfo.attack_power += _tempCurseData.attack_power;
+			global.playerInfo.defense += _tempCurseData.defense;
+			global.playerInfo.moveSpeed += _tempCurseData.move_speed;
+		}
+	
+	}
+	return global.playerInfo;
+}
+
+configStats();
+//////////////////////////////////////////////////////
+
 // EVAN PUSHED STUFF - 11:40-ish PM
 starting_x = x;
 starting_y = y;
