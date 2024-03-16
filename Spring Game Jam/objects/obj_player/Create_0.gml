@@ -216,6 +216,8 @@ function StateMelee()
 	
 	
 	// TO-DO : collision w/ enemies, deal damage to enemies.
+	//me
+	// 
 	
 	// set to StateFree after all info run.
 	state = StateFree();

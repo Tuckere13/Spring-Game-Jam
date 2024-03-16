@@ -32,6 +32,13 @@ function calc_movement() {
 		// add movement
 		x += _hmove;
 		y += _vmove;
+		
+		if (_hmove > 0){
+			image_xscale = 1
+		}
+		if (_hmove < 0) {
+			image_xscale = -1
+		}
 	}
 }
 

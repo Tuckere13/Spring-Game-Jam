@@ -4,4 +4,4 @@ randomize()
 
 instance_create_layer(random(room_width), random(room_height), "Instances", type)
 
-alarm_set(alarm[0], 300)
+alarm_set(alarm[0], interval)
