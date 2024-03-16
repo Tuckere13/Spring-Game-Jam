@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/*
 if (instance_exists(obj_player)){
 	if (obj_player.hspeed > obj_player.vspeed){
 		y = obj_player.y + sign(obj_player.image_yscale) * 50
@@ -9,3 +8,4 @@ if (instance_exists(obj_player)){
 	y = obj_player.y
 	}
 }
+*/

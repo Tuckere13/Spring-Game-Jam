@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_end_flag",
-    "path":"sprites/spr_end_flag/spr_end_flag.yy",
+    "name":"spr_player_attack",
+    "path":"sprites/spr_player_attack/spr_player_attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -10,11 +10,24 @@ function reset_variables() {
 
 
 function get_input() {
-	if keyboard_check(ord("W")) up		= 1
-	if keyboard_check(ord("A")) left	= 1
-	if keyboard_check(ord("S")) down	= 1
-	if keyboard_check(ord("D")) right	= 1
+	if keyboard_check(ord("W")){
+		up = 1;
+		
+	}
+	if keyboard_check(ord("A")){
+		left =1;
+		obj_player.image_xscale = 1;
+	}
+	if keyboard_check(ord("S")){ 
+		down = 1;
+		//obj_player.image_xscale = 1;
+	}
+	if keyboard_check(ord("D")){ 
+		right= 1;
+		obj_player.image_xscale = 1;
+	}
 }
+
 
 function calc_movement() {
 	var _hmove = right - left;
