@@ -1,5 +1,3 @@
-
-
 ///////////////////// Movement ////////////////////////
 reset_variables();
 
@@ -33,3 +31,26 @@ function playerInfoStruct(_health, _attack, _defense, _move_speed) constructor
 isMelee = false;
 isRanged = false;
 */
+
+// EVAN PUSHED STUFF - 11:40 PM-ish
+///////////////////// Movement ////////////////////////
+reset_variables();
+
+get_input();
+
+calc_movement();
+////////////////////////////////////////////////////////
+
+if(!global.between_levels){
+	move_speed = 5 + speed_buff;
+} else {
+
+	move_speed = 0;
+
+}
+
+// basic death condition lol
+if(global.playerInfo.hp <= 0)
+{
+	instance_destroy();
+}
