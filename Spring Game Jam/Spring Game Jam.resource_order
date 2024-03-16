@@ -52,6 +52,7 @@
     {"name":"boss_shooting","order":2,"path":"scripts/boss_shooting/boss_shooting.yy",},
     {"name":"curse_choice","order":1,"path":"scripts/curse_choice/curse_choice.yy",},
     {"name":"playerInfoStruct","order":3,"path":"scripts/playerInfoStruct/playerInfoStruct.yy",},
+    {"name":"rangedStructConstructor","order":4,"path":"scripts/rangedStructConstructor/rangedStructConstructor.yy",},
     {"name":"spr_boss_enemy_1","order":5,"path":"sprites/spr_boss_enemy_1/spr_boss_enemy_1.yy",},
     {"name":"spr_control_button","order":1,"path":"sprites/spr_control_button/spr_control_button.yy",},
     {"name":"spr_curse_choice_screen","order":3,"path":"sprites/spr_curse_choice_screen/spr_curse_choice_screen.yy",},

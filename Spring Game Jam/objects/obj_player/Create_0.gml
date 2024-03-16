@@ -94,6 +94,9 @@ ice_dis = 8;
 global.can_use_ice = true; 
 ice_speed = 8;
 
+// EVAN STUFF - March 16th 2024 - 1 PM push
+// framework for ice ball attack with rangedStructConstructor
+iceBallInfo = new rangedStructConstructor(8,8);	// distance, constructor.
 
 keyRight = keyboard_check(vk_right) or keyboard_check(ord("D"));
 keyLeft = keyboard_check(vk_left) or keyboard_check(ord("A"));
@@ -103,6 +106,10 @@ keyDown = keyboard_check(vk_down) or keyboard_check(ord("S"));
 keyDash = keyboard_check_pressed(vk_shift);
 keyAction = keyboard_check_pressed(ord("E"));
 
+// EVAN STUFF - March 16th, 2024 - 1PM push
+// melee and ranged attack buttons, 
+meleeKey = keyboard_check_pressed(ord("9"));
+rangedKey = keyboard_check_pressed(ord("0"));
 
 function StateFree()
 {
@@ -192,3 +199,44 @@ function StateDash()
 
 state = StateFree();
 //end of push//
+
+
+// EVAN STUFF - March 16th 2024 - 1PM push
+//rough draft - attack states
+
+// melee state
+function StateMelee()
+{
+	isMelee = true;
+	
+	// damage = player's attack stat.
+	meleeDamage = global.playerInfo.attack;		// feel free to tinker with this =)
+	
+	// TO-DO : create/assign attacking object/sprite
+	
+	
+	// TO-DO : collision w/ enemies, deal damage to enemies.
+	
+	// set to StateFree after all info run.
+	state = StateFree();
+}
+
+// ranged state?
+function StateRanged()
+{
+	isRanged = true;
+	
+	// create projectile object and assign distance and speed 
+	// to it from struct constructor?
+	// rangeAttack = new rangedStructConstructor(distance, proSpeed); // both ints.
+	
+	// damage done based on attack stat.
+	
+	// decrease enemy hp (or kill if dies in 1 hit) if projectile collides w/ it.
+	
+	// set to StateFree after all info run.
+	state = StateFree();
+}
+
+// reset to StateFree by default.
+state = StateFree();

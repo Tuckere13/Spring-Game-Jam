@@ -15,6 +15,12 @@ keyDown = keyboard_check(vk_down) or keyboard_check(ord("S"));
 keyDash = keyboard_check_pressed(vk_shift);
 keyAction = keyboard_check_pressed(ord("E"));
 
+// EVAN STUFF - March 16th, 2024 - 1PM push
+// melee and ranged attack buttons, 
+// Does it need to be in create, step, or both?
+meleeKey = keyboard_check_pressed(ord("9"));
+rangedKey = keyboard_check_pressed(ord("0"));
+
 //Dash Cooldown
 if (can_attack == true) {
 	alarm[0] = 120;

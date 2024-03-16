@@ -79,6 +79,7 @@
     {"id":{"name":"curse_choice","path":"scripts/curse_choice/curse_choice.yy",},},
     {"id":{"name":"player_inputs","path":"scripts/player_inputs/player_inputs.yy",},},
     {"id":{"name":"playerInfoStruct","path":"scripts/playerInfoStruct/playerInfoStruct.yy",},},
+    {"id":{"name":"rangedStructConstructor","path":"scripts/rangedStructConstructor/rangedStructConstructor.yy",},},
     {"id":{"name":"snd_menu_music","path":"sounds/snd_menu_music/snd_menu_music.yy",},},
     {"id":{"name":"spr_boss_enemy_1","path":"sprites/spr_boss_enemy_1/spr_boss_enemy_1.yy",},},
     {"id":{"name":"spr_boss1_projectile","path":"sprites/spr_boss1_projectile/spr_boss1_projectile.yy",},},
