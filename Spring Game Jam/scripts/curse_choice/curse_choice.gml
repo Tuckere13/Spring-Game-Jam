@@ -1,3 +1,6 @@
+// EVAN PUSHED STUFF 3/16/24 2:40 PM
+// improved curse_choice algorithm
+
 randomize();
 function curse_screen(){
 	
@@ -52,10 +55,17 @@ function curse_screen(){
 function choose_curses(){
 	
 	var _current_choices = array_create(2);
-	
-	for (var _i = 0; _i < array_length(_current_choices); _i++){
+		
+	for (var _i = 0; _i < array_length(_current_choices); _i++)
+	{
 		_current_choices[_i] = global.curse_list[random(array_length(global.curse_list))];
+		
+		// ensuring both curses on curse selection screen are different.
+		while(_current_choices[0] == _current_choices[1])
+		{
+			_current_choices[0] = global.curse_list[random(array_length(global.curse_list))];
+		}
+		
 	}
-	
-	return _current_choices;
+		return _current_choices;
 }
