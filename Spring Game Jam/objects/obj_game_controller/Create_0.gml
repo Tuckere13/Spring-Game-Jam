@@ -19,3 +19,6 @@ if (room = rm_main){
 	window_set_fullscreen(true);
 }
 	
+
+paused = false;
+paused_surf = -1;

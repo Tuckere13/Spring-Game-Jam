@@ -12,11 +12,13 @@ function reset_variables() {
 function get_input() {
 	if keyboard_check(ord("W")){
 		up = 1;
+		//obj_player.sprite_index = spr_player_back;
 	}
 	if keyboard_check(ord("A")){
 		left =1;
 	}
 	if keyboard_check(ord("S")){ 
+		//obj_player.sprite_index = spr_player;
 		down = 1;
 	}
 	if keyboard_check(ord("D")){ 
@@ -35,18 +37,18 @@ function calc_movement() {
 		var _dir = point_direction(0, 0, _hmove, _vmove);
 		
 		// get distance
-		_hmove = lengthdir_x(move_speed, _dir);
-		_vmove = lengthdir_y(move_speed, _dir);
+		_hmove = lengthdir_x(obj_player.move_speed, _dir);
+		_vmove = lengthdir_y(obj_player.move_speed, _dir);
 		
 		// add movement
 		x += _hmove;
 		y += _vmove;
 		
 		if (_hmove > 0){
-			image_xscale = -1
+			//image_xscale = -1
 		}
 		if (_hmove < 0) {
-			image_xscale = 1
+			//image_xscale = 1
 		}
 	}
 }
