@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"boss_shooting",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"boss_shooting",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
