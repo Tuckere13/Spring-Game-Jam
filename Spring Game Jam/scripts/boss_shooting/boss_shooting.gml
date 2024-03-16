@@ -4,7 +4,7 @@ function boss1_shoot(_x, _y){
 	
 	projectiles = array_create(8);
 	
-	for (var _i; _i < 8; _i++){
+	for (var _i = 0; _i < 8; _i++){
 		instance_create_layer(_x, _y, "Instances", obj_boss1_projectile);
 	}	
 	
@@ -13,9 +13,12 @@ function boss1_shoot(_x, _y){
 		projectiles[_j] = instance_find(obj_boss1_projectile, _j);
 	}
 	
+	var _dir = 0;
+	
 	for (var _g = 0; _g < array_length(projectiles); _g++;)
 	{
-		
+		//lengthdir_x(50, _dir);
+		_dir += 45
 	}
 	
 	

@@ -8,7 +8,10 @@ starting_y = y;
 // All da struct info for da game.
 
 // Initial playerInfo
-playerInfo = new playerInfoStruct(100, 5, 5, 2); // edit to work out kinks
+
+
+//playerInfo = new playerInfoStruct(100, 5, 5, 2); // edit to work out kinks
+
 
 // for loop listing all the curse effects 
 // if statements for each curse if they are active

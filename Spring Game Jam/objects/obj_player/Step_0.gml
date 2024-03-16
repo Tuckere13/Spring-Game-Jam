@@ -20,6 +20,7 @@ if(!global.between_levels){
 
 // PUSHED STUFF
 // playerInfoStruct
+/*
 function playerInfoStruct(_health, _attack, _defense, _move_speed) constructor
 {
 	hp = _health;
@@ -31,3 +32,4 @@ function playerInfoStruct(_health, _attack, _defense, _move_speed) constructor
 // attack variables.
 isMelee = false;
 isRanged = false;
+*/

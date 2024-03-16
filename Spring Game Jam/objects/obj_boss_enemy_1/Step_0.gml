@@ -8,7 +8,7 @@ if (can_attack){
 
 		
 
-
+		boss1_shoot(x, y)
 
 
 
