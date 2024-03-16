@@ -4,22 +4,20 @@ function boss1_shoot(_x, _y){
 	
 	projectiles = array_create(8);
 	
-	for (var _i = 0; _i < 8; _i++){
-		instance_create_layer(_x, _y, "Instances", obj_boss1_projectile);
-	}	
 	
-	for (var _j = 0; _j < instance_number(obj_boss1_projectile); _j++;)
-	{
-		projectiles[_j] = instance_find(obj_boss1_projectile, _j);
-	}
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_up);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_upright);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_right);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_downright);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_down);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_downleft);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_left);
+	instance_create_layer(_x, _y, "Instances", obj_boss1_projectile_upleft);
 	
-	var _dir = 0;
 	
-	for (var _g = 0; _g < array_length(projectiles); _g++;)
-	{
-		//lengthdir_x(50, _dir);
-		_dir += 45
-	}
+	
+	
+	
 	
 	
 }

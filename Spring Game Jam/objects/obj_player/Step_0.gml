@@ -33,13 +33,7 @@ isRanged = false;
 */
 
 // EVAN PUSHED STUFF - 11:40 PM-ish
-///////////////////// Movement ////////////////////////
-reset_variables();
 
-get_input();
-
-calc_movement();
-////////////////////////////////////////////////////////
 
 if(!global.between_levels){
 	move_speed = 5 + speed_buff;
@@ -50,7 +44,10 @@ if(!global.between_levels){
 }
 
 // basic death condition lol
+
+/*
 if(global.playerInfo.hp <= 0)
 {
 	instance_destroy();
 }
+*/

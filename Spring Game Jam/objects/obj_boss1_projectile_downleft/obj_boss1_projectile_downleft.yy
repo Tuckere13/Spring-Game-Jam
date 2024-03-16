@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss1_projectile",
+  "%Name":"obj_boss1_projectile_downleft",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss1_projectile",
+  "name":"obj_boss1_projectile_downleft",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy Projectiles",
-    "path":"folders/Objects/Enemy Projectiles.yy",
+    "name":"Boss 1 Bullets",
+    "path":"folders/Objects/Enemy Projectiles/Boss 1 Bullets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
