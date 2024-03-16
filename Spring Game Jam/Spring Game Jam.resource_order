@@ -66,6 +66,7 @@
     {"name":"spr_curse9","order":3,"path":"sprites/spr_curse9/spr_curse9.yy",},
     {"name":"spr_end_flag","order":2,"path":"sprites/spr_end_flag/spr_end_flag.yy",},
     {"name":"spr_fade_screen","order":2,"path":"sprites/spr_fade_screen/spr_fade_screen.yy",},
+    {"name":"spr_floor","order":10,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_grass","order":3,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_seeker","order":7,"path":"sprites/spr_seeker/spr_seeker.yy",},

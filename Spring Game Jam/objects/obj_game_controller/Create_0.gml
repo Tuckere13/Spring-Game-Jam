@@ -10,3 +10,9 @@ for (var _i = 0; _i < 10; _i++){
 	
 	global.curse_list[_i] = $"Curse{_i+1}";
 }
+
+
+if (room = rm_main){
+	window_set_fullscreen(true);
+}
+	
