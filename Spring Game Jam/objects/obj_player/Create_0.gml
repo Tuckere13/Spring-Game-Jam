@@ -334,3 +334,9 @@ if (global.vampire = true) {
 	obj_player.hp /= 2
 	}
 }
+
+if (global.bees){
+if (instance_exists(obj_player)){
+    instance_create_layer(x, y, "Instances", obj_bees)
+}
+}
