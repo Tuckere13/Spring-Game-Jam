@@ -20,3 +20,8 @@ for (var j = 0; j < random_range(2,10); j += 1){
 k++
 }
 
+with(type) {
+	if !place_snapped(64,64){
+		move_snap(64,64);
+	}
+}
