@@ -6,3 +6,12 @@ if (keyboard_check_pressed(ord("M"))){
 if (keyboard_check_pressed(ord("B"))){
 	instance_create_layer(x, y, "Instances", obj_bees)
 }
+if (keyboard_check_pressed(ord("O"))){
+	global.reverse = true
+	if (instance_exists(obj_player)){
+		obj_player.attack_power *= 3
+		obj_player.defence /= 3
+		obj_player.speed_buff += 2
+		obj_player.max_hp += 25
+	}
+}

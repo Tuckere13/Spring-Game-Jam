@@ -1,4 +1,5 @@
 hp = 100  // might need to remove this sowwwwy
+max_hp = 100
 prevhp = int64(hp);
 prevbuff = int64(speed_buff);
 
