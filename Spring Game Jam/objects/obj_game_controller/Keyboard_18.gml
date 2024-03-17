@@ -3,3 +3,6 @@
 if (keyboard_check_pressed(ord("M"))){
 	global.midas = true
 }
+if (keyboard_check_pressed(ord("B"))){
+	instance_create_layer(x, y, "Instances", obj_bees)
+}
