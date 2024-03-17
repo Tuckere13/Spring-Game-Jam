@@ -26,9 +26,9 @@ global.curseInfo[9] = new curseInfoStructConstructor("Curse10", 0, 0, 0, 0, fals
 function curse_screen(){
 	
 	var _screen_spawn_x = obj_player.x //room_width/2
-	var _screen_spawn_y = obj_player.y //room_height/2
+	var _screen_spawn_y = obj_player.y - 180//room_height/2
 	
-	var _offset = -200
+	var _offset = -150
 	
 	instance_create_layer(_screen_spawn_x, _screen_spawn_y, "CurseScreen", obj_curse_choice_screen);
 	
@@ -71,7 +71,7 @@ function curse_screen(){
 			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice10);
 		}
 		//////////////////////////////////////////////////////
-		_offset = 200
+		_offset = 150
 	}
 	
 	

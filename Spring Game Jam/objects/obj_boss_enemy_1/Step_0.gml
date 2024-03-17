@@ -21,3 +21,10 @@ if (collision_rectangle(x-400, y-400, x, y+400, obj_player, false, false)){
 if (collision_rectangle(x, y-400, x+400, y+400, obj_player, false, false)){
 	image_xscale = -1;
 }
+
+if (hp > 0) {
+	medusa_alive = true
+} else {
+	medusa_alive = false;
+	instance_destroy();
+}

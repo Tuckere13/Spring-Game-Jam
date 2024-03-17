@@ -62,8 +62,7 @@ configStats();
 //////////////////////////////////////////////////////
 
 // EVAN PUSHED STUFF - 11:40-ish PM
-starting_x = x;
-starting_y = y;
+
 
 // attack variables.
 isMelee = false;
