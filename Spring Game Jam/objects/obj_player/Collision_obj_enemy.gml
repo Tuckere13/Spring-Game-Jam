@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if (global.achilles) {
 	num_dam = random(100)
-	if (num_dam > 95){
+	if (num_dam > 97){
 		hp = clamp(hp -  hp*0.9, 0, max_hp)
 	}
 	else {

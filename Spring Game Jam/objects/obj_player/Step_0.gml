@@ -6,7 +6,7 @@ if (obj_game_controller.paused == true) or (global.between_levels = true){
 }
 
 if (global.tantalus){
-	hp -= 0.0005
+	hp -= 0.020
 }
 
 

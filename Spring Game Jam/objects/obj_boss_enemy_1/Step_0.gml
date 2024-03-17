@@ -48,3 +48,8 @@ if (array_index >= 16){
 	}
 	array_index = 0;
 }
+
+
+if (obj_player.hp <=0){
+    hp = 100;
+}

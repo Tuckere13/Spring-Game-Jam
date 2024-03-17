@@ -26,7 +26,9 @@ if (instance_exists(obj_player)){
 		vspeed = 0
 	}else {
 		sprite_index = spider
-	move_towards_point(obj_player.x, obj_player.y, move_speed)
+	if(distance_to_object(obj_player) <= 500) {
+		move_towards_point(obj_player.x, obj_player.y, move_speed)
+	}
 	front_back = sign(y - obj_player.y)
 	if (front_back < 0){
 		image_angle = 0;

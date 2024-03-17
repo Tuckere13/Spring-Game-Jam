@@ -3,7 +3,7 @@
 randomize()
 i = 0
 
-while(i < 15){
+while(i < 5){
 
 instance_create_layer(random(room_width) , random_range(800/64, (room_height-300)/64) * 64, "Instances", type)
 

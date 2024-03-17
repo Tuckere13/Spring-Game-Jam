@@ -18,3 +18,7 @@ y = obj_player.y;
 
 x += offset_x; 
 y += offset_y; 
+
+if(global.shoot) {
+	attack_power = 1;
+}

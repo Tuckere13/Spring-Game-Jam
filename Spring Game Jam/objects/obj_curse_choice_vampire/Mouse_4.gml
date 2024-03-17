@@ -1,10 +1,12 @@
 
 
-for (var _i = 0; _i < 6; _i++){
+for (var _i = 0; _i < 7; _i++){
 	if global.curseInfo[_i].name = "Vampire" {
 		global.curseInfo[_i].isActive = true;
 	}
 }
+global.used_curses[global.arr_count] = "Vampire";
+global.arr_count++;
 
 global.between_levels = false;
 

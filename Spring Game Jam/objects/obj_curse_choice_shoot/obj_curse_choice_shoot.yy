@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse7",
-    "path":"sprites/spr_curse7/spr_curse7.yy",
+    "name":"spr_curse_shoot",
+    "path":"sprites/spr_curse_shoot/spr_curse_shoot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

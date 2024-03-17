@@ -3,7 +3,7 @@
 randomize()
 i = 0
 
-while(i < 2){
+while(i < 1){
 
 spinStruct = {dir_string:"NESW ne nw se sw X"}
 noSpinStruct = {dir_string:"NESW ne nw se sw"}

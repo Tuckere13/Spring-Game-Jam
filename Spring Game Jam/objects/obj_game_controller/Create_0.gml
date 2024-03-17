@@ -30,3 +30,6 @@ if (room = rm_main){
 
 paused = false;
 paused_surf = -1;
+
+global.used_curses = array_create(7, "Curse10");
+global.arr_count = 0;

@@ -7,7 +7,7 @@ randomize();
 
 // holding curse info and if the curse is active or not.
 global.curseInfo = array_create(7, curseInfoStructConstructor);
-var _used_curses = array_create(0);
+
 
 // Creating curses that change the user's stats.
 // can only be used for curses that change the user's stats.
@@ -72,7 +72,8 @@ function curse_screen(){
 		if (_current_choices[_i].name = "Curse10"){
 			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice10);
 		}
-		//////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////
+	
 		_offset = 150
 	}
 	
@@ -96,23 +97,33 @@ function choose_curses(){
 			_index = 6;
 		}
 		
+		for(var _j = 0; _j < array_length(global.used_curses); _j++) {
+			if (global.curseInfo[_index].name == global.used_curses[_j]){
+				_index = round(random(array_length(global.curseInfo)));
+			}
+		}
+		
 		_current_choices[_i] = global.curseInfo[_index];
 		
 		// ensuring both curses on curse selection screen are different.
 		while(_current_choices[0] == _current_choices[1])
 		{
-			_index = round(random(array_length(global.curseInfo)));
+			
+				_index = round(random(array_length(global.curseInfo)));
 		
-			if(_index == 7)
-			{
-				_index = 6;
+				if(_index == 7)
+				{
+					_index = 6;
+				}
+			
+				_current_choices[0] = global.curseInfo[_index];
 			}
 			
-			_current_choices[0] = global.curseInfo[_index];
-		}
+		
+	}
 		//////////////////////////////////////////////////////
 	
-	}
+	
 		return _current_choices;
 }
 
