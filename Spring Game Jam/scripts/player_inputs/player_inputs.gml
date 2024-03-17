@@ -10,19 +10,38 @@ function reset_variables() {
 
 
 function get_input() {
-	if keyboard_check(ord("W")){
-		up = 1;
-		//obj_player.sprite_index = spr_player_back;
-	}
-	if keyboard_check(ord("A")){
-		left =1;
-	}
-	if keyboard_check(ord("S")){ 
-		//obj_player.sprite_index = spr_player;
-		down = 1;
-	}
-	if keyboard_check(ord("D")){ 
-		right= 1;
+	
+	if (global.reverse) {
+		if keyboard_check(ord("S")){
+			up = 1;
+			//obj_player.sprite_index = spr_player_back;
+		}
+		if keyboard_check(ord("D")){
+			left =1;
+		}
+		if keyboard_check(ord("W")){ 
+			//obj_player.sprite_index = spr_player;
+			down = 1;
+		}
+		if keyboard_check(ord("A")){ 
+			right= 1;
+		}
+			
+	} else {
+		if keyboard_check(ord("W")){
+			up = 1;
+			//obj_player.sprite_index = spr_player_back;
+		}
+		if keyboard_check(ord("A")){
+			left =1;
+		}
+		if keyboard_check(ord("S")){ 
+			//obj_player.sprite_index = spr_player;
+			down = 1;
+		}
+		if keyboard_check(ord("D")){ 
+			right= 1;
+		}
 	}
 }
 
@@ -44,10 +63,7 @@ function calc_movement() {
 		x += _hmove;
 		y += _vmove;
 		
-		if (global.reverse) {
-			_hmove *= -1
-			_vmove *= -1
-		}
+		
 		
 		if (_hmove > 0){
 			//image_xscale = -1

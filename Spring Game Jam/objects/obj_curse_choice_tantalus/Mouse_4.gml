@@ -7,6 +7,8 @@ global.used_curses[global.arr_count] = "Tantalus";
 global.arr_count++;
 
 global.between_levels = false;
+obj_player.hp = obj_player.max_hp;
+
 
 instance_destroy(obj_curse_choice_screen);
 instance_destroy(obj_curse_choice_achilles);

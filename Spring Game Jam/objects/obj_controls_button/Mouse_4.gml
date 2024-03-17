@@ -1,5 +1,5 @@
 
 
-obj_menu.next_room = rm_main;
-obj_menu.changing_room = true;
+room_goto(rm_controls)
+//obj_menu.changing_room = true;
 

@@ -1,4 +1,7 @@
 
+audio_stop_all();
+audio_play_sound(sd_game_music, 10, true, 1, 3)
+
 global.attack_power = 1
 
 global.current_level = 10;
