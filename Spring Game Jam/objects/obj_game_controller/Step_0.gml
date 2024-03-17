@@ -20,4 +20,24 @@ if paused == true
     }
 }
 
+if global.curseInfo[0].isActive = true {
+	global.midas = true;
+}
+if global.curseInfo[1].isActive = true {
+	global.reverse = true;
+}
+if global.curseInfo[2].isActive = true {
+	global.bees = true;
+}
+if global.curseInfo[3].isActive = true {
+	global.achilles = true;
+}
+if global.curseInfo[4].isActive = true {
+	global.tantalus = true;
+}
+if global.curseInfo[5].isActive = true {
+	global.vampire = true;
+}
+
+
 

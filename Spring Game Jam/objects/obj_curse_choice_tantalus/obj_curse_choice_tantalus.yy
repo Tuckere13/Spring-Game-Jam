@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_curse_choice3",
-  "eventList":[],
+  "%Name":"obj_curse_choice_tantalus",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_curse_choice3",
+  "name":"obj_curse_choice_tantalus",
   "overriddenProperties":[],
   "parent":{
     "name":"Curse Screen Choices",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse3",
-    "path":"sprites/spr_curse3/spr_curse3.yy",
+    "name":"spr_curse5",
+    "path":"sprites/spr_curse5/spr_curse5.yy",
   },
   "spriteMaskId":null,
   "visible":true,

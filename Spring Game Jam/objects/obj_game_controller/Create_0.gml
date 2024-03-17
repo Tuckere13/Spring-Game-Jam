@@ -8,8 +8,12 @@ global.between_levels = false;
 global.curse_list = array_create(10);
 
 global.midas = false
-
 global.reverse = false
+global.bees = false
+global.achilles = false
+global.tantalus = false
+global.vampire = false
+
 
 for (var _i = 0; _i < 10; _i++){
 	

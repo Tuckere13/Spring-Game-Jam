@@ -3,7 +3,9 @@
 
 //instance_create_layer(x, y, "Instances", obj_attack)
 
-
+if (can_melee) {
+	can_melee = false;
+	alarm[2] = 15;
 if look_dir = "left" { 
 	//image_index = spr_player;
     instance_create_layer(x - 35, y, "Instances",  obj_attack);
@@ -27,4 +29,5 @@ if look_dir = "up" {
 	instance_create_layer(x, y - 35, "Instances",  obj_attack);
 	obj_attack.offset_y =  -35;
 	obj_attack.image_yscale = -1;
+}
 }

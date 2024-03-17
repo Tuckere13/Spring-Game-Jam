@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_curse_choice6",
-  "eventList":[],
+  "%Name":"obj_curse_choice_vampire",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_curse_choice6",
+  "name":"obj_curse_choice_vampire",
   "overriddenProperties":[],
   "parent":{
     "name":"Curse Screen Choices",

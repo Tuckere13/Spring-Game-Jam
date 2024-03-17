@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_curse_choice4",
+  "%Name":"obj_curse_buttons_parent",
   "eventList":[],
   "managed":true,
-  "name":"obj_curse_choice4",
+  "name":"obj_curse_buttons_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"Curse Screen Choices",
@@ -23,14 +23,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"curse_name","filters":[],"listItems":[],"multiselect":false,"name":"curse_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"null","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_curse4",
-    "path":"sprites/spr_curse4/spr_curse4.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

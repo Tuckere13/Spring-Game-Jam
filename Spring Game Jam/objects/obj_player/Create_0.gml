@@ -96,6 +96,7 @@ for(all curses)
 
 //Dash Stuff - Jacob push//
 can_attack = true;
+can_melee = true;
 
 grv = 0;
 hsp = 0;

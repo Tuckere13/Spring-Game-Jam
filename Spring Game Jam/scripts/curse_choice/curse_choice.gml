@@ -11,12 +11,14 @@ var _used_curses = array_create(0);
 
 // Creating curses that change the user's stats.
 // can only be used for curses that change the user's stats.
-global.curseInfo[0] = new curseInfoStructConstructor("Curse1", 0, 0, 0, 0, false);
-global.curseInfo[1] = new curseInfoStructConstructor("Curse2", 0, 0, 0, 0, false);
-global.curseInfo[2] = new curseInfoStructConstructor("Curse3", 0, 0, 0, 0, false);
-global.curseInfo[3] = new curseInfoStructConstructor("Curse4", 0, 0, 0, 0, false);
-global.curseInfo[4] = new curseInfoStructConstructor("Curse5", 0, 0, 0, 0, false);
-global.curseInfo[5] = new curseInfoStructConstructor("Curse6", 0, 0, 0, 0, false);
+
+// Name, health, attack power, defense, speed
+global.curseInfo[0] = new curseInfoStructConstructor("Midas", 0, 0, 0, 0, false);
+global.curseInfo[1] = new curseInfoStructConstructor("Reverse", 25, 3, 3, 2, false);
+global.curseInfo[2] = new curseInfoStructConstructor("Bees", 0, 0, 0, -1, false);
+global.curseInfo[3] = new curseInfoStructConstructor("Achilles", 0, 0, 0, 0, false);
+global.curseInfo[4] = new curseInfoStructConstructor("Tantalus", 0, 0, 0, 0, false);
+global.curseInfo[5] = new curseInfoStructConstructor("Vampire", 0, 0, 0, 0, false);
 global.curseInfo[6] = new curseInfoStructConstructor("Curse7", 0, 0, 0, 0, false);
 global.curseInfo[7] = new curseInfoStructConstructor("Curse8", 0, 0, 0, 0, false);
 global.curseInfo[8] = new curseInfoStructConstructor("Curse9", 0, 0, 0, 0, false);

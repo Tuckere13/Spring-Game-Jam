@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_medusa_wall",
+  "%Name":"obj_curse_choice_reverse",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_medusa_wall",
+  "name":"obj_curse_choice_reverse",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Curse Screen Choices",
+    "path":"folders/Objects/Curse Screen Choices.yy",
   },
-  "parentObjectId":{
-    "name":"obj_wall",
-    "path":"objects/obj_wall/obj_wall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Medusa_wall",
-    "path":"sprites/spr_Medusa_wall/spr_Medusa_wall.yy",
+    "name":"spr_curse2",
+    "path":"sprites/spr_curse2/spr_curse2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
