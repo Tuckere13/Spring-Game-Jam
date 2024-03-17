@@ -80,6 +80,12 @@ if (global.shoot){
 		can_shoot = false;
 }
 
+if (global.bees){
+    if (!instance_exists(obj_bees)){
+    instance_create_layer(x, y,"Instances", obj_bees)
+    }
+}
+
 else if (can_shoot and spin){
 	alarm[4] = 10;
 	can_shoot = false;

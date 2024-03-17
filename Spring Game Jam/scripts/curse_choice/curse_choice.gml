@@ -97,11 +97,7 @@ function choose_curses(){
 			_index = 6;
 		}
 		
-		for(var _j = 0; _j < array_length(global.used_curses); _j++) {
-			if (global.curseInfo[_index].name == global.used_curses[_j]){
-				_index = round(random(array_length(global.curseInfo)));
-			}
-		}
+		
 		
 		_current_choices[_i] = global.curseInfo[_index];
 		
