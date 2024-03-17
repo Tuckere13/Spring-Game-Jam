@@ -1,8 +1,10 @@
 //////////////////////////////////////////////////////
 // EVAN - March 16 2024 - 7 PM push
 
+//suaus
 
 randomize();
+
 // holding curse info and if the curse is active or not.
 global.curseInfo = array_create(10, curseInfoStructConstructor);
 var _used_curses = array_create(0);
@@ -77,20 +79,34 @@ function curse_screen(){
 
 
 //////////////////////////////////////////////////////
-// EVAN - March 16 2024 - 7 PM push
-// replaced curse_list w/ curseInfo;
+// EVAN - March 16 2024 - 11 PM push
+// fixed curse methods
 function choose_curses(){
 	
 	var _current_choices = array_create(2);
-		
+	
 	for (var _i = 0; _i < array_length(_current_choices); _i++)
 	{
-		_current_choices[_i] = global.curseInfo[round(random_range(1, array_length(global.curseInfo) + 1)) - 1];
+		var _index = round(random(array_length(global.curseInfo)));
+		
+		if(_index == 10)
+		{
+			_index = 9;
+		}
+		
+		_current_choices[_i] = global.curseInfo[_index];
 		
 		// ensuring both curses on curse selection screen are different.
 		while(_current_choices[0] == _current_choices[1])
 		{
-			_current_choices[0] = global.curseInfo[round(random_range(1, array_length(global.curseInfo)+ 1)) - 1];
+			_index = round(random(array_length(global.curseInfo)));
+		
+			if(_index == 10)
+			{
+				_index = 9;
+			}
+			
+			_current_choices[0] = global.curseInfo[_index];
 		}
 		//////////////////////////////////////////////////////
 	
