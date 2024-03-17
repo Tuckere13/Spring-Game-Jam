@@ -5,6 +5,10 @@ if (obj_game_controller.paused == true) or (global.between_levels = true){
 	move_speed = base_speed + speed_buff;
 }
 
+if (global.tantalus){
+	hp -= 0.0005
+}
+
 
 ///////////////////// Movement ////////////////////////
 reset_variables();

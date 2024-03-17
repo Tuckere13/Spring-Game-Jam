@@ -44,6 +44,11 @@ function calc_movement() {
 		x += _hmove;
 		y += _vmove;
 		
+		if (global.reverse) {
+			_hmove *= -1
+			_vmove *= -1
+		}
+		
 		if (_hmove > 0){
 			//image_xscale = -1
 		}

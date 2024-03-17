@@ -1,14 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall_spawner",
+  "%Name":"obj_wall_spawner_side",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wall_spawner",
+  "name":"obj_wall_spawner_side",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},"propertyId":{"name":"type","path":"objects/obj_spawner/obj_spawner.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_medusa_wall",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},"propertyId":{"name":"type","path":"objects/obj_spawner/obj_spawner.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_wall_random_side",},
   ],
   "parent":{
     "name":"Objects",
