@@ -6,7 +6,7 @@
 randomize();
 
 // holding curse info and if the curse is active or not.
-global.curseInfo = array_create(10, curseInfoStructConstructor);
+global.curseInfo = array_create(7, curseInfoStructConstructor);
 var _used_curses = array_create(0);
 
 // Creating curses that change the user's stats.
@@ -19,10 +19,10 @@ global.curseInfo[2] = new curseInfoStructConstructor("Bees", 0, 0, 0, -1, false)
 global.curseInfo[3] = new curseInfoStructConstructor("Achilles", 0, 0, 0, 0, false);
 global.curseInfo[4] = new curseInfoStructConstructor("Tantalus", 0, 0, 0, 0, false);
 global.curseInfo[5] = new curseInfoStructConstructor("Vampire", 0, 0, 0, 0, false);
-global.curseInfo[6] = new curseInfoStructConstructor("Curse7", 0, 0, 0, 0, false);
-global.curseInfo[7] = new curseInfoStructConstructor("Curse8", 0, 0, 0, 0, false);
-global.curseInfo[8] = new curseInfoStructConstructor("Curse9", 0, 0, 0, 0, false);
-global.curseInfo[9] = new curseInfoStructConstructor("Curse10", 0, 0, 0, 0, false);
+global.curseInfo[6] = new curseInfoStructConstructor("Shoot", 0, 0, 0, 0, false);
+//global.curseInfo[7] = new curseInfoStructConstructor("Curse8", 0, 0, 0, 0, false);
+//global.curseInfo[8] = new curseInfoStructConstructor("Curse9", 0, 0, 0, 0, false);
+//global.curseInfo[9] = new curseInfoStructConstructor("Curse10", 0, 0, 0, 0, false);
 //////////////////////////////////////////////////////
 
 function curse_screen(){
@@ -42,26 +42,26 @@ function curse_screen(){
 	// checking if name of curse matches the name in current choices array.
 	// WHEN ADDING NAME OF CURSES, MUST CHANGE NAME HERE TOO.
 	for(var _i = 0; _i < array_length(_current_choices); _i++){
-		if (_current_choices[_i].name = "Curse1"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice1);
+		if (_current_choices[_i].name = "Midas"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_midas);
 		}
-		if (_current_choices[_i].name = "Curse2"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice2);
+		if (_current_choices[_i].name = "Reverse"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_reverse);
 		}
-		if (_current_choices[_i].name = "Curse3"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice3);
+		if (_current_choices[_i].name = "Bees"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_bees);
 		}
-		if (_current_choices[_i].name = "Curse4"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice4);
+		if (_current_choices[_i].name = "Achilles"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_achilles);
 		}
-		if (_current_choices[_i].name = "Curse5"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice5);
+		if (_current_choices[_i].name = "Tantalus"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_tantalus);
 		}
-		if (_current_choices[_i].name = "Curse6"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice6);
+		if (_current_choices[_i].name = "Vampire"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_vampire);
 		}
-		if (_current_choices[_i].name = "Curse7"){
-			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice7);
+		if (_current_choices[_i].name = "Shoot"){
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice_shoot);
 		}
 		if (_current_choices[_i].name = "Curse8"){
 			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice8);
@@ -91,9 +91,9 @@ function choose_curses(){
 	{
 		var _index = round(random(array_length(global.curseInfo)));
 		
-		if(_index == 10)
+		if(_index == 7)
 		{
-			_index = 9;
+			_index = 6;
 		}
 		
 		_current_choices[_i] = global.curseInfo[_index];
@@ -103,9 +103,9 @@ function choose_curses(){
 		{
 			_index = round(random(array_length(global.curseInfo)));
 		
-			if(_index == 10)
+			if(_index == 7)
 			{
-				_index = 9;
+				_index = 6;
 			}
 			
 			_current_choices[0] = global.curseInfo[_index];

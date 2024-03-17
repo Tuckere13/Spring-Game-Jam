@@ -14,6 +14,7 @@ global.achilles = false
 global.tantalus = false
 global.vampire = false
 global.lightweight = false
+global.shoot = false
 
 
 for (var _i = 0; _i < 10; _i++){

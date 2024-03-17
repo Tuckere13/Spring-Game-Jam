@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_curse_choice_achilles",
+  "%Name":"obj_curse_choice_shoot",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_curse_choice_achilles",
+  "name":"obj_curse_choice_shoot",
   "overriddenProperties":[],
   "parent":{
     "name":"Curse Screen Choices",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse_achilles",
-    "path":"sprites/spr_curse_achilles/spr_curse_achilles.yy",
+    "name":"spr_curse7",
+    "path":"sprites/spr_curse7/spr_curse7.yy",
   },
   "spriteMaskId":null,
   "visible":true,

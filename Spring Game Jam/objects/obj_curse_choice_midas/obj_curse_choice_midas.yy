@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse1",
-    "path":"sprites/spr_curse1/spr_curse1.yy",
+    "name":"spr_curse_midas",
+    "path":"sprites/spr_curse_midas/spr_curse_midas.yy",
   },
   "spriteMaskId":null,
   "visible":true,

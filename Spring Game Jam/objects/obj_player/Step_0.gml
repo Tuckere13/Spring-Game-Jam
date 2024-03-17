@@ -69,11 +69,15 @@ else{
 
 
 
+if (global.shoot){
+	bullet_curse = true
+}
 
-if (bullet_curse == true){
-if (can_shoot == true and spin == false) {
-	alarm[3] = 20;
-	can_shoot = false;
+
+if (global.shoot){
+	if (can_shoot == true and spin == false) {
+		alarm[3] = 45;
+		can_shoot = false;
 }
 
 else if (can_shoot and spin){
@@ -87,4 +91,11 @@ if (array_index >= 16){
 	}
 	array_index = 0;
 }
+}
+
+
+if (hp <=0){
+    x = starting_x
+    y = starting_y
+    hp = max_hp
 }

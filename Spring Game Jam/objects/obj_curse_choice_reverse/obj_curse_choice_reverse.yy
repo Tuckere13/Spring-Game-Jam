@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse2",
-    "path":"sprites/spr_curse2/spr_curse2.yy",
+    "name":"spr_curse_reverse",
+    "path":"sprites/spr_curse_reverse/spr_curse_reverse.yy",
   },
   "spriteMaskId":null,
   "visible":true,

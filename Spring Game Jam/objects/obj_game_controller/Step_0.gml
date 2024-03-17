@@ -38,6 +38,9 @@ if global.curseInfo[4].isActive = true {
 if global.curseInfo[5].isActive = true {
 	global.vampire = true;
 }
+if global.curseInfo[6].isActive = true {
+	global.shoot = true;
+}
 
 
 

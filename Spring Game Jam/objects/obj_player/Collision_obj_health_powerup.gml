@@ -5,7 +5,9 @@ if (global.midas){
 } 
 if (global.tantalus) {
 	hp = clamp(hp + 60, 0, max_hp)
-} 
+}if (global.vampire = true){
+	hp += 0;
+}
 else {
 	hp = clamp(hp + 30, 0, max_hp)
 }

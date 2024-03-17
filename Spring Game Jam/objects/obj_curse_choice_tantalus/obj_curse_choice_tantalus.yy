@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse5",
-    "path":"sprites/spr_curse5/spr_curse5.yy",
+    "name":"spr_curse_tantalus",
+    "path":"sprites/spr_curse_tantalus/spr_curse_tantalus.yy",
   },
   "spriteMaskId":null,
   "visible":true,

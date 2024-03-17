@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse3",
-    "path":"sprites/spr_curse3/spr_curse3.yy",
+    "name":"spr_curse_bees",
+    "path":"sprites/spr_curse_bees/spr_curse_bees.yy",
   },
   "spriteMaskId":null,
   "visible":true,

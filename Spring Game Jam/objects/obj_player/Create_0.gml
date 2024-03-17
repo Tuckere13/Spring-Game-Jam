@@ -321,3 +321,16 @@ function stringSearch(dir){
 	}
 }
 ////////////////////////////////////////////
+
+if (global.bees){
+	
+	instance_create_layer(x, y,"Instances", obj_bees)
+
+}
+
+if (global.vampire = true) {
+	if (instance_exists(obj_player)){
+	obj_player.max_hp /= 2
+	obj_player.hp /= 2
+	}
+}

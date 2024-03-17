@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_curse6",
-    "path":"sprites/spr_curse6/spr_curse6.yy",
+    "name":"spr_curse_vampire",
+    "path":"sprites/spr_curse_vampire/spr_curse_vampire.yy",
   },
   "spriteMaskId":null,
   "visible":true,
