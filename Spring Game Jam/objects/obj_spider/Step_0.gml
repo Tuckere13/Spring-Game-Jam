@@ -35,4 +35,6 @@ if (instance_exists(obj_player)){
 }
 if (hp <= 0){
 	instance_destroy(self)
+} else{
+	
 }
