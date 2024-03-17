@@ -13,7 +13,10 @@ if (keyboard_check_pressed(ord("O"))){
 		obj_player.speed_buff += 2
 		obj_player.max_hp += 25
 	}
-	
+	global.attack_power *= 3
+	if (instance_exists(obj_attack) && global.reverse){
+		obj_attack.attack_power *= 3
+	}
 }
 if (keyboard_check_pressed(ord("V"))){
 	global.vampire = true

@@ -1,5 +1,5 @@
 
-
+global.attack_power = 1
 
 global.current_level = 10;
 

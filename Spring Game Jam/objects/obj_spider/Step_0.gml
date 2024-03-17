@@ -19,10 +19,13 @@ if (array_index >= 16){
 if (instance_exists(obj_player)){
 	if (stagger)
 	{
+		if (global.midas){
+		sprite_index = spr_spider_midas
+		}
 		hspeed = 0
 		vspeed = 0
 	}else {
-		
+		sprite_index = spider
 	move_towards_point(obj_player.x, obj_player.y, move_speed)
 	front_back = sign(y - obj_player.y)
 	if (front_back < 0){
