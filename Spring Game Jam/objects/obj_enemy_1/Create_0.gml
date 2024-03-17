@@ -1,6 +1,3 @@
-global.bulletid = 0;
-show_debug_message("asdasd");
-
 array_index = 0
 
 can_attack = true;
@@ -34,4 +31,13 @@ function stringSearch(dir){
 			array_index += 1;
 			}
 	}
+}
+
+
+//basic enemy parent fo collisions
+invinc = false
+front_back = 1
+stagger = false
+if (global.midas){
+	stagger_time *= 2
 }

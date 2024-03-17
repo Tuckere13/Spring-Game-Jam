@@ -1,6 +1,3 @@
-global.bulletid = 0;
-show_debug_message("asdasd");
-
 array_index = 0
 
 can_attack = true;
