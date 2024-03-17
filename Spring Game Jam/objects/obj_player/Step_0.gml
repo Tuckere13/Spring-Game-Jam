@@ -22,21 +22,25 @@ if ((point_direction(x, y, mouse_x, mouse_y) <= 45 and point_direction(x, y, mou
 	look_dir = "right"
 	sprite_index = spr_player;
 	image_xscale = -1;
+	dir_string = "E"
 }
 if (point_direction(x, y, mouse_x, mouse_y) <= 135 and point_direction(x, y, mouse_x, mouse_y) > 45) {
 	look_dir = "up"
 	sprite_index = spr_player_back;
 	image_xscale = 1;
+	dir_string = "N"
 }
 if (point_direction(x, y, mouse_x, mouse_y) <= 225 and point_direction(x, y, mouse_x, mouse_y) > 135) {
 	look_dir = "left"
 	sprite_index = spr_player;
 	image_xscale = 1;
+	dir_string = "W"
 }
 if (point_direction(x, y, mouse_x, mouse_y) <= 315 and point_direction(x, y, mouse_x, mouse_y) > 225) {
 	look_dir = "down"
 	sprite_index = spr_player;
 	image_xscale = 1;
+	dir_string = "S"
 }
 
 keyRight = keyboard_check(vk_right) or keyboard_check(ord("D"));
@@ -63,3 +67,24 @@ else{
 	StateDash();
 }
 
+
+
+
+if (bullet_curse == true){
+if (can_shoot == true and spin == false) {
+	alarm[3] = 20;
+	can_shoot = false;
+}
+
+else if (can_shoot and spin){
+	alarm[4] = 10;
+	can_shoot = false;
+}
+
+if (array_index >= 16){
+	for (var i = 0; i < array_length(bullet_array); i += 1){
+		instance_destroy(bullet_array[i]);
+	}
+	array_index = 0;
+}
+}

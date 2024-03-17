@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_web",
-    "path":"sprites/spr_web/spr_web.yy",
+    "name":"web",
+    "path":"sprites/web/web.yy",
   },
   "spriteMaskId":null,
   "visible":true,

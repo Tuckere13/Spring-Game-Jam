@@ -8,9 +8,9 @@
     "TileSerialiseData":[],
   },
   "name":"TileSet2",
-  "out_columns":4,
-  "out_tilehborder":2,
-  "out_tilevborder":2,
+  "out_columns":5,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
   "parent":{
     "name":"Tile Sets",
     "path":"folders/Tile Sets.yy",
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_brick_wall",
-    "path":"sprites/spr_brick_wall/spr_brick_wall.yy",
+    "name":"tilefixed",
+    "path":"sprites/tilefixed/tilefixed.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -27,7 +27,9 @@
     "path":"texturegroups/Default",
   },
   "tileAnimation":{
-    "FrameData":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,],
+    "FrameData":[
+      0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,
+    ],
     "SerialiseFrameCount":1,
   },
   "tileAnimationFrames":[],
@@ -38,5 +40,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":25,
 }
