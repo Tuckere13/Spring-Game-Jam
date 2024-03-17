@@ -3,6 +3,7 @@
 
 // holding curse info and if the curse is active or not.
 global.curseInfo = array_create(10, curseInfoStructConstructor);
+var _used_curses = array_create(0);
 
 // Creating curses that change the user's stats.
 // can only be used for curses that change the user's stats.
@@ -20,12 +21,12 @@ global.curseInfo[9] = new curseInfoStructConstructor("Curse10", 0, 0, 0, 0, fals
 
 function curse_screen(){
 	
-	var _room_middle_x = room_width/2
-	var _room_middle_y = room_height/2
+	var _screen_spawn_x = obj_player.x //room_width/2
+	var _screen_spawn_y = obj_player.y //room_height/2
 	
 	var _offset = -200
 	
-	instance_create_layer(_room_middle_x, _room_middle_y, "CurseScreen", obj_curse_choice_screen);
+	instance_create_layer(_screen_spawn_x, _screen_spawn_y, "CurseScreen", obj_curse_choice_screen);
 	
 	var _current_choices = array_create(2);
 	_current_choices = choose_curses();
@@ -36,34 +37,34 @@ function curse_screen(){
 	// WHEN ADDING NAME OF CURSES, MUST CHANGE NAME HERE TOO.
 	for(var _i = 0; _i < array_length(_current_choices); _i++){
 		if (_current_choices[_i].name = "Curse1"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice1);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice1);
 		}
 		if (_current_choices[_i].name = "Curse2"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice2);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice2);
 		}
 		if (_current_choices[_i].name = "Curse3"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice3);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice3);
 		}
 		if (_current_choices[_i].name = "Curse4"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice4);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice4);
 		}
 		if (_current_choices[_i].name = "Curse5"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice5);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice5);
 		}
 		if (_current_choices[_i].name = "Curse6"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice6);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice6);
 		}
 		if (_current_choices[_i].name = "Curse7"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice7);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice7);
 		}
 		if (_current_choices[_i].name = "Curse8"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice8);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice8);
 		}
 		if (_current_choices[_i].name = "Curse9"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice9);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice9);
 		}
 		if (_current_choices[_i].name = "Curse10"){
-			instance_create_layer(_room_middle_x + _offset, _room_middle_y, "CurseOptions", obj_curse_choice10);
+			instance_create_layer(_screen_spawn_x + _offset, _screen_spawn_y, "CurseOptions", obj_curse_choice10);
 		}
 		//////////////////////////////////////////////////////
 		_offset = 200
@@ -72,7 +73,7 @@ function curse_screen(){
 	
 }
 
-/*
+
 //////////////////////////////////////////////////////
 // EVAN - March 16 2024 - 7 PM push
 // replaced curse_list w/ curseInfo;
@@ -82,12 +83,12 @@ function choose_curses(){
 		
 	for (var _i = 0; _i < array_length(_current_choices); _i++)
 	{
-		_current_choices[_i] = global.curseInfo[random(array_length(global.curseInfo))];
+		_current_choices[_i] = global.curseInfo[round(random(array_length(global.curseInfo))) - 1];
 		
 		// ensuring both curses on curse selection screen are different.
 		while(_current_choices[0] == _current_choices[1])
 		{
-			_current_choices[0] = global.curseInfo[random(array_length(global.curseInfo))];
+			_current_choices[0] = global.curseInfo[round(random(array_length(global.curseInfo))) - 1];
 		}
 		//////////////////////////////////////////////////////
 	
@@ -97,7 +98,7 @@ function choose_curses(){
 
 // EVAN PUSHED STUFF 3/16/24 2:40 PM
 // improved curse_choice algorithm
-
+/*
 randomize();
 function curse_screen(){
 	
